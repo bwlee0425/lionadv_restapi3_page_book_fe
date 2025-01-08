@@ -31,6 +31,8 @@ class BookBoard {
             console.error('카테고리 로드 실패:', error);
         }
     }
+    // 카테고리id가 더미데이터를 여러번 생성하는 과정에서 1부터 40이 넘도록 설정되거나 null 로 설정이 됨.
+    // book 의 카테고리id 를 제대로 설정해주어야 검색창에서 카테고리별로 책 제목을 볼 수 있음. 현재 코드수정이 안된상태.
 
     async loadBooks() {
         try {
